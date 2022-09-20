@@ -9,7 +9,7 @@ import UserPostRouter from "./routes/private/UserPost.js";
 import userAuth from "./routes/public/UserAuth.js";
 import publicRoutes from "./routes/public/Public.js";
 import adminRoute from "./routes/private/Admin.js";
-import { ErrorHandler } from "./modules/ErrorMiddleware.js";
+import { ErrorHandler } from "./middleware/ErrorMiddleware.js";
 dotenv.config();
 const app = Express();
 app.use(bodyParser.json());
